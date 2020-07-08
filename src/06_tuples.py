@@ -44,5 +44,5 @@ print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
 u = (1,)  # What needs to be added to make this work?
-print('the tuple statement needs to have a comma to make it a tuple and not an integer')
+print('the tuple declaration needs to have a comma to make it a tuple and not an integer')
 print_tuple(u)
