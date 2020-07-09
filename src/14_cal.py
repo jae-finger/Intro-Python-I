@@ -32,19 +32,19 @@ from datetime import datetime
 
 # set for current month and year
 
-month = datetime.today().month
-year = datetime.today().year
+mo = datetime.today().month
+yr = datetime.today().year
 
 # if extra 2 arguments were passed in, set year to third argument
 
 if len(sys.argv) > 2:
-    year = int(sys.argv[2])
+    yr = int(sys.argv[2])
 
 # if extra 1 argument passed in, set month to second argument
 
 if len(sys.argv) > 1:
-    month = int(sys.argv[1])
+    mo = int(sys.argv[1])
 
 # initialize calendar and print month
 c = calendar.TextCalendar(calendar.SUNDAY)
-c.prmonth(theyear=year, themonth=month)
+c.prmonth(theyear=yr, themonth=mo)
